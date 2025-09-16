@@ -13,6 +13,7 @@
       <form
         [formGroup]="registroForm"
         class="registro-form"
+        (ngSubmit)="enviarDados()"
       >
         <div>
           <label>Nome</label>
@@ -22,6 +23,11 @@
             placeholder="Nome completo"
             class="registro-input"
           />
+          @if (registroForm.get("name")?.invalid && registroForm.get("name")?.touched) {
+            <div class="form_error">
+              <span>É necessário preencher um nome válido</span>
+            </div>
+          }
         </div>
 
         <div>
@@ -32,6 +38,11 @@
             placeholder="Digite seu email"
             class="registro-input"
           />
+          @if (registroForm.get("email")?.invalid && registroForm.get("email")?.touched) {
+            <div class="form_error">
+              <span>É necessário preencher um email válido</span>
+            </div>
+          }
         </div>
 
         <div>
@@ -42,6 +53,11 @@
             placeholder="******"
             class="registro-input"
           />
+          @if (registroForm.get("password")?.invalid && registroForm.get("password")?.touched) {
+            <div class="form_error">
+              <span>É necessário preencher uma senha válida</span>
+            </div>
+          }
         </div>
 
         <button

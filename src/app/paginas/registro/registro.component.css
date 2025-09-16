@@ -130,3 +130,9 @@
   color: #81fe88;
   text-decoration: none;
 }
+
+.form_error {
+  color: #e53e3e;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}

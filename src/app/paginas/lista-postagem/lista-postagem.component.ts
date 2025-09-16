@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import * as data from '../../db.json'; 
 import { Postagem } from '../../models/post.model'; 
 
+
 @Component({
   selector: 'app-lista-postagem',
   standalone: true,
