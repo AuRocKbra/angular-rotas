@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, input} from '@angular/core';
+import {Estatisticas} from '../../models/post.model';
 
 @Component({
   selector: 'app-acoes-postagem',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './acoes-postagem.component.css'
 })
 export class AcoesPostagemComponent {
-
+  estatisticas = input.required<Estatisticas>();
 }

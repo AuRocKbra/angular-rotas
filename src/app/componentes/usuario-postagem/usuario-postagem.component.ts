@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, input} from '@angular/core';
+import {Usuario} from '../../models/post.model';
 
 @Component({
   selector: 'app-usuario-postagem',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './usuario-postagem.component.css'
 })
 export class UsuarioPostagemComponent {
-
+  usuario = input.required<Usuario>();
 }
