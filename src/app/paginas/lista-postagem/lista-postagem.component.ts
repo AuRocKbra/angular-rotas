@@ -4,6 +4,7 @@ import * as data from '../../db.json';
 import { Postagem } from '../../models/post.model';
 import {CartaoPostagemComponent} from '../../componentes/cartao-postagem/cartao-postagem.component';
 
+
 @Component({
   selector: 'app-lista-postagem',
   standalone: true,
