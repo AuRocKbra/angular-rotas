@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import * as data from '../../db.json';
 import { Postagem } from '../../models/post.model';
 import {CartaoPostagemComponent} from '../../componentes/cartao-postagem/cartao-postagem.component';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -19,4 +20,10 @@ export class ListaPostagemComponent implements OnInit {
     this.posts = data.posts
   }
 
+  constructor(private readonly router: Router) {  }
+
+
+  irParaPosts(postId: string) {
+    this.router.navigate(['/posts', postId]);
+  }
 }

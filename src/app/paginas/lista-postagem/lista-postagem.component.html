@@ -1,11 +1,7 @@
 <div class="conteudo">
   <div class="grade-postagens">
-    <a *ngFor="let postagem of posts" class="link-postagem">
-<<<<<<< HEAD
+    <a *ngFor="let postagem of posts" class="link-postagem" (click)="irParaPosts(postagem.id)">
       <app-cartao-postagem [postagem]="postagem"></app-cartao-postagem>
-=======
-     <!-- <app-cartao-postagem [postagem]="postagem"></app-cartao-postagem>-->
->>>>>>> 019b0188f2dcc49c77470668bcdfb8740de0a613
     </a>
   </div>
 </div>
